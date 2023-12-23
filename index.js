@@ -23,7 +23,7 @@ mongoose.connect(process.env.DATABASE).then(()=>{
 app.use(express.urlencoded({extended: false}));
 app.use(express.json())
   
-app.use(cors({credentials:true,origin:'http://localhost:3000'}))
+app.use(cors({credentials:true,origin:'https://startling-rabanadas-fa4228.netlify.app'}))
 const __dirname = dirname(fileURLToPath(import.meta.url));
 app.use("/public", express.static(__dirname + "/public"));
 
